@@ -15,13 +15,21 @@
             <!-- Логотип в навигационной панели -->
             <a href="/" class="nav-logo"><img src="assets/images/logo.svg" alt="Web Developer Portfolio Logo"></a>
             <!-- Выпадающее меню -->
-            <div class="main-nav-dropdown">
-                <a href="" class="dropdown-element">Projetos</a>
-                <a href="" class="dropdown-element">Sobre mim</a>
-                <a href="" class="dropdown-element">Contato</a>
+            <div class="main-nav-dropdown-bg">
+                <div class="main-nav-dropdown-container">
+                    <div class="main-nav-dropdown">
+                        <div class="main-nav-dropdown-list">
+                            <a href="" class="dropdown-element">Projetos</a>
+                            <a href="" class="dropdown-element">Sobre mim</a>
+                            <a href="" class="dropdown-element">Contato</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+            
             <!-- Кнопка гамбургер-меню -->
-            <button class="main-nav-menu-toggle">
+            <button class="main-nav-menu-toggle" title="Open Menu" id="nav-menu-hamburger">
                 <img src="assets/images/Icons/Hamburger-default.svg" alt="Menu">
             </button>
         </nav>
@@ -270,5 +278,7 @@
                 </a></span>
         </div>
     </section>
+
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>

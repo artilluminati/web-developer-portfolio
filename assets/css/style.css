@@ -74,11 +74,65 @@ section{
 .main-nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
 }
-.main-nav-dropdown{
+.main-nav-dropdown-bg{
+    background: rgba(0, 0, 0, 0.10);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: none;
+}
+.main-nav-dropdown-container{
+    width: 100%;
+    max-width: 1280px;
+    padding-inline: 90px;
+    margin: auto;
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.main-nav-dropdown{
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(10px);
+}
+.main-nav-dropdown-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 44px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 20px 25px -5px rgba(0, 0, 0, 0.02);
+}
+.main-nav-dropdown a{
+    text-decoration: none;
+}
+.main-nav-dropdown a{
+    color: #f59e0b;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+}
+.main-nav-dropdown a:nth-child(2n){
+    color: #38BDF8;
+}
+.main-nav-dropdown a:nth-child(3n){
+    color: #34D399;
+}
+.main-nav-dropdown::before{
+    content: url("data:image/svg+xml, %3Csvg%20width%3D%2218%22%20height%3D%228%22%20viewBox%3D%220%200%2018%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M5.72519%201.58559C7.32252%20-0.293615%2010.2234%20-0.293612%2011.8207%201.5856L17.2729%208H0.272949L5.72519%201.58559Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+    margin-right: 15px;
+    height: 14px;
+    display: flex;
+    justify-content: flex-end;
 }
 .main-nav-menu-toggle{
     background: none;
@@ -264,7 +318,8 @@ height: 0; }
 }
 .about-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(600px, 30%) minmax(400px, 30%);
+    justify-content: space-between;
     row-gap: 48px;
     margin-top: 40px;
 }
@@ -306,6 +361,13 @@ height: 0; }
     flex-direction: space-between;
     gap: 20px;
     margin-top: 32px;
+}
+.about-skills-memoji-drawing{
+    display: flex;
+    justify-content: center;
+}
+.about-skills-memoji-drawing img{
+    max-width: 100%;
 }
 
 .footer-section{
@@ -397,4 +459,14 @@ height: 0; }
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    
+}
+
+/* Мобильная версия */
+@media screen and (max-width: 376px) {
+    
 }
