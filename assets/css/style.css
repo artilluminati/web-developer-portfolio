@@ -444,7 +444,8 @@ height: 0; }
     background: url("../images/components/image\ 9.png"), linear-gradient(180deg, #2d70a4 0%, #2c72b0 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position-x: left;
+    background-position-y: bottom;
 }
 .footer-ends{
     display: flex;
@@ -463,7 +464,11 @@ height: 0; }
 
 
 @media screen and (max-width: 1000px) {
+    .about-container{
+        display: flex;
+        flex-direction: column-reverse;
     
+    }
 }
 
 /* Мобильная версия */
